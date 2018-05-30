@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)https://www.w3schools.com/w3css/tryw3css_templates_interior_design.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>W3.CSS Template</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./W3.CSS Template_files/w3.css">
+<link rel="stylesheet" href="./W3.CSS Template_files/css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head><body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index: 3; width: 300px; font-weight: bold; display: none;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Fechar Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Nome do Aluno<br></b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="W3.CSS Template.html/#horarios" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Horários</a>
+    <a href="treinos.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Treinos*</a>
+    <a href="#estrutura" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Estrutura</a>
+    <a href="#instrutores" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Instrutores</a>
+    <a href="#contato" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contato</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span></span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor: pointer; display: none;" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="estrutura">
+    <h1 class="w3-jumbo"><b>Academia Power Max</b></h1>
+    <!-- <hr style="width:50px;border:5px solid red" class="w3-round"> -->
+  </div>
+
+  <!-- Services -->
+  <div class="w3-container" id="horarios" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Horário de Funcionamento</b></h1>
+  <!-- TODO:  Tabela com horários e dias que a Academia funciona-->
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Esse é o nosso horário de Funcionamento. Organize seu horário!</p>
+    <table>
+      <tr>
+        <th>Segunda à Sexta</th>
+        <th>Sábados</th>
+      </tr>
+      <tr>
+        <td>Das 00:00 até as 00:00 e das 00:00 até as 00:00</td>
+        <td>Das 00:00 até as 00:00</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="w3-container" style="margin-top:80px" id="estrutura">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Estrutura.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="./W3.CSS Template_files/1.jpg" style="width:100%" onclick="onClick(this)">
+      <img src="./W3.CSS Template_files/2.jpg" style="width:100%" onclick="onClick(this)">
+      <img src="./W3.CSS Template_files/3.jpg" style="width:100%" onclick="onClick(this)">
+    </div>
+
+    <div class="w3-half">
+      <img src="./W3.CSS Template_files/4.jpg" style="width:100%" onclick="onClick(this)">
+      <img src="./W3.CSS Template_files/5.jpg" style="width:100%" onclick="onClick(this)">
+      <img src="./W3.CSS Template_files/6.jpg" style="width:100%" onclick="onClick(this)">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display=&#39;none&#39;">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Designers -->
+  <div class="w3-container" id="instrutores" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Instrutores.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Breve Descrição da da equipe que compõe a Academia</p>
+    <p><b>Esta é a nossa equipe</b>:</p>
+  </div>
+
+  <!-- The Team -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="./W3.CSS Template_files/00.jpg" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>Instrutor 1</h3>
+          <p class="w3-opacity">Função</p>
+          <p>Descrição do profissional.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="./W3.CSS Template_files/00.jpg" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>Instrutor 1</h3>
+          <p class="w3-opacity">Função</p>
+          <p>Descrição do profissional.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="./W3.CSS Template_files/00.jpg" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>Instrutor 1</h3>
+          <p class="w3-opacity">Função</p>
+          <p>Descrição do profissional.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div class="w3-container" id="contato" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Contato.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Gostaria de dar uma opinião ou reclamação? Fique à vontade para usar esse formulário abaixo:</p>
+    <form action="https://www.w3schools.com/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Nome</label>
+        <input class="w3-input w3-border" type="text" name="Name" required="">
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required="">
+      </div>
+      <div class="w3-section">
+        <label>Mensagem</label>
+        <input class="w3-input w3-border" type="text" name="Message" required="">
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Enviar!</button>
+    </form>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:76px"><p class="w3-right">Desenvolvido por Allyson Henrique.</p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+
+<span style="border-radius: 3px; text-indent: 20px; width: auto; padding: 0px 4px 0px 0px; text-align: center; font-style: normal; font-variant: normal; font-weight: bold; font-stretch: normal; font-size: 11px; line-height: 20px; font-family: &quot;Helvetica Neue&quot;, Helvetica, sans-serif; color: rgb(255, 255, 255); background: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMzBweCIgd2lkdGg9IjMwcHgiIHZpZXdCb3g9Ii0xIC0xIDMxIDMxIj48Zz48cGF0aCBkPSJNMjkuNDQ5LDE0LjY2MiBDMjkuNDQ5LDIyLjcyMiAyMi44NjgsMjkuMjU2IDE0Ljc1LDI5LjI1NiBDNi42MzIsMjkuMjU2IDAuMDUxLDIyLjcyMiAwLjA1MSwxNC42NjIgQzAuMDUxLDYuNjAxIDYuNjMyLDAuMDY3IDE0Ljc1LDAuMDY3IEMyMi44NjgsMC4wNjcgMjkuNDQ5LDYuNjAxIDI5LjQ0OSwxNC42NjIiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIxIj48L3BhdGg+PHBhdGggZD0iTTE0LjczMywxLjY4NiBDNy41MTYsMS42ODYgMS42NjUsNy40OTUgMS42NjUsMTQuNjYyIEMxLjY2NSwyMC4xNTkgNS4xMDksMjQuODU0IDkuOTcsMjYuNzQ0IEM5Ljg1NiwyNS43MTggOS43NTMsMjQuMTQzIDEwLjAxNiwyMy4wMjIgQzEwLjI1MywyMi4wMSAxMS41NDgsMTYuNTcyIDExLjU0OCwxNi41NzIgQzExLjU0OCwxNi41NzIgMTEuMTU3LDE1Ljc5NSAxMS4xNTcsMTQuNjQ2IEMxMS4xNTcsMTIuODQyIDEyLjIxMSwxMS40OTUgMTMuNTIyLDExLjQ5NSBDMTQuNjM3LDExLjQ5NSAxNS4xNzUsMTIuMzI2IDE1LjE3NSwxMy4zMjMgQzE1LjE3NSwxNC40MzYgMTQuNDYyLDE2LjEgMTQuMDkzLDE3LjY0MyBDMTMuNzg1LDE4LjkzNSAxNC43NDUsMTkuOTg4IDE2LjAyOCwxOS45ODggQzE4LjM1MSwxOS45ODggMjAuMTM2LDE3LjU1NiAyMC4xMzYsMTQuMDQ2IEMyMC4xMzYsMTAuOTM5IDE3Ljg4OCw4Ljc2NyAxNC42NzgsOC43NjcgQzEwLjk1OSw4Ljc2NyA4Ljc3NywxMS41MzYgOC43NzcsMTQuMzk4IEM4Ljc3NywxNS41MTMgOS4yMSwxNi43MDkgOS43NDksMTcuMzU5IEM5Ljg1NiwxNy40ODggOS44NzIsMTcuNiA5Ljg0LDE3LjczMSBDOS43NDEsMTguMTQxIDkuNTIsMTkuMDIzIDkuNDc3LDE5LjIwMyBDOS40MiwxOS40NCA5LjI4OCwxOS40OTEgOS4wNCwxOS4zNzYgQzcuNDA4LDE4LjYyMiA2LjM4NywxNi4yNTIgNi4zODcsMTQuMzQ5IEM2LjM4NywxMC4yNTYgOS4zODMsNi40OTcgMTUuMDIyLDYuNDk3IEMxOS41NTUsNi40OTcgMjMuMDc4LDkuNzA1IDIzLjA3OCwxMy45OTEgQzIzLjA3OCwxOC40NjMgMjAuMjM5LDIyLjA2MiAxNi4yOTcsMjIuMDYyIEMxNC45NzMsMjIuMDYyIDEzLjcyOCwyMS4zNzkgMTMuMzAyLDIwLjU3MiBDMTMuMzAyLDIwLjU3MiAxMi42NDcsMjMuMDUgMTIuNDg4LDIzLjY1NyBDMTIuMTkzLDI0Ljc4NCAxMS4zOTYsMjYuMTk2IDEwLjg2MywyNy4wNTggQzEyLjA4NiwyNy40MzQgMTMuMzg2LDI3LjYzNyAxNC43MzMsMjcuNjM3IEMyMS45NSwyNy42MzcgMjcuODAxLDIxLjgyOCAyNy44MDEsMTQuNjYyIEMyNy44MDEsNy40OTUgMjEuOTUsMS42ODYgMTQuNzMzLDEuNjg2IiBmaWxsPSIjYmQwODFjIj48L3BhdGg+PC9nPjwvc3ZnPg==&quot;) 3px 50% / 14px 14px no-repeat rgb(189, 8, 28); position: absolute; opacity: 1; z-index: 8675309; display: none; cursor: pointer; border: none; -webkit-font-smoothing: antialiased;">Salvar</span><span style="width: 24px; height: 24px; background: url(&quot;data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pjxzdmcgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxkZWZzPjxtYXNrIGlkPSJtIj48cmVjdCBmaWxsPSIjZmZmIiB4PSIwIiB5PSIwIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHJ4PSI2IiByeT0iNiIvPjxyZWN0IGZpbGw9IiMwMDAiIHg9IjUiIHk9IjUiIHdpZHRoPSIxNCIgaGVpZ2h0PSIxNCIgcng9IjEiIHJ5PSIxIi8+PHJlY3QgZmlsbD0iIzAwMCIgeD0iMTAiIHk9IjAiIHdpZHRoPSI0IiBoZWlnaHQ9IjI0Ii8+PHJlY3QgZmlsbD0iIzAwMCIgeD0iMCIgeT0iMTAiIHdpZHRoPSIyNCIgaGVpZ2h0PSI0Ii8+PC9tYXNrPjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9IiNmZmYiIG1hc2s9InVybCgjbSkiLz48L3N2Zz4=&quot;) 50% 50% / 14px 14px no-repeat rgba(0, 0, 0, 0.4); position: absolute; opacity: 1; z-index: 8675309; display: none; cursor: pointer; border: none; border-radius: 12px;"></span></body></html>
