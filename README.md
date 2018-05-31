@@ -1,10 +1,9 @@
 # gym_1
 Gerenciador de treinos para Academias.
 
-![alt text](https://i.imgur.com/YZtPjPE.png)
-![alt text](https://i.imgur.com/vGEunPp.png)
-![alt text](https://i.imgur.com/H3lAK0k.png)
- <img src="https://i.imgur.com/YZtPjPE.png" align="center"/>
+  <img src="https://i.imgur.com/vGEunPp.png" align="center"/>
+  <img src="https://i.imgur.com/H3lAK0k.png" align="center"/>
+  <img src="https://i.imgur.com/YZtPjPE.png" align="center"/>
 
 # Tecnologias usadas
 HTML/CSS/Javascript
